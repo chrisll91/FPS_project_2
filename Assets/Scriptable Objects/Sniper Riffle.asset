@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa81c818e67b9e245a9eeaf4372fb052, type: 3}
+  m_Name: Sniper Riffle
+  m_EditorClassIdentifier: Assembly-CSharp::WeaponSO
+  weaponPrefab: {fileID: 8137518601352366847, guid: 47cd6ebbd33496344a757881a5dfd48d, type: 3}
+  Damage: 15
+  FireRate: 1.15
+  HitVFXprefab: {fileID: 8303651340357786873, guid: 4705cef47dc92104ea1d3201cdd5fa71, type: 3}
+  shootSound: {fileID: 8300000, guid: 1e2a5905bb50c5c408ed991a59b8c046, type: 3}
+  emptyMagazineSound: {fileID: 8300000, guid: a03b22955ac069047b4aa22d8acd1349, type: 3}
+  ReloadingSound: {fileID: 8300000, guid: ad407ebd60eca914fbb77d364df7e5fe, type: 3}
+  ShootVolume: 0.2
+  IsAutomatic: 0
+  canZoom: 1
+  ZoomAmount: 10
+  rotationAmount: 0.2
+  magazineSize: 8
+  totalAmmoCapacity: 24
+  reserveAmmo: 20
+  currentAmmo: 2
+  ReloadTime: 2.5

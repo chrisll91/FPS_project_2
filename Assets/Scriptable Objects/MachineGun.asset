@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa81c818e67b9e245a9eeaf4372fb052, type: 3}
+  m_Name: MachineGun
+  m_EditorClassIdentifier: Assembly-CSharp::WeaponSO
+  weaponPrefab: {fileID: 7511620648473087756, guid: 8e8d1dfcd8df6224cb7ef84f2de52308, type: 3}
+  Damage: 2
+  FireRate: 0.12
+  HitVFXprefab: {fileID: 8303651340357786873, guid: 4705cef47dc92104ea1d3201cdd5fa71, type: 3}
+  shootSound: {fileID: 8300000, guid: 11e916544e72ae745b5582396503220d, type: 3}
+  emptyMagazineSound: {fileID: 8300000, guid: a03b22955ac069047b4aa22d8acd1349, type: 3}
+  ReloadingSound: {fileID: 8300000, guid: c4271a719b70ba240a927c9b6a6ca1d6, type: 3}
+  ShootVolume: 0.7
+  IsAutomatic: 1
+  canZoom: 0
+  ZoomAmount: 10
+  rotationAmount: 0.4
+  magazineSize: 63
+  totalAmmoCapacity: 126
+  reserveAmmo: 0
+  currentAmmo: 25
+  ReloadTime: 5.1
