@@ -5,9 +5,9 @@ public class GateHealth : MonoBehaviour
     public int MaxGateHealth = 200;
     public int CurrentGateHealth = 200;
 
-    public void GateTakeDamage(int damage)
+    public void GateTakeDamage()
     {
-        CurrentGateHealth -= damage;
+        CurrentGateHealth -= 10;
         if(CurrentGateHealth < 0) CurrentGateHealth = 0;
     }
     public void GateHeal(int heal)

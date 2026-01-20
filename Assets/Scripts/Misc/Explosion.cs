@@ -3,7 +3,7 @@ using UnityEngine;
 public class Explosion : MonoBehaviour
 {
     [SerializeField] float radius = 5.5f;
-    [SerializeField] int VSplayerExplosionDamage = 5;
+    [SerializeField] int VSplayerExplosionDamage = 4;
     [SerializeField] int VSgateExplosionDamage = 10;
 
     private void Start()
@@ -33,7 +33,7 @@ public class Explosion : MonoBehaviour
             GateHealth gateHealth = hitCollider.GetComponent<GateHealth>();
             if (gateHealth != null)
             {
-                gateHealth.GateTakeDamage(VSgateExplosionDamage);
+                gateHealth.GateTakeDamage();
             }
         }
 
