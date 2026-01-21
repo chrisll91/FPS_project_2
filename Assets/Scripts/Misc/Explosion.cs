@@ -33,7 +33,7 @@ public class Explosion : MonoBehaviour
             GateHealth gateHealth = hitCollider.GetComponent<GateHealth>();
             if (gateHealth != null)
             {
-                gateHealth.GateTakeDamage();
+                gateHealth.GateTakeDamage(VSgateExplosionDamage);
             }
         }
 
