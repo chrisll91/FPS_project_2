@@ -101,16 +101,25 @@ public class LevelDesignerTool : EditorWindow
 
         // Validate selection
         if (Selection.gameObjects.Length == 0)
+        {
             selectionMessage = "No object selected";
+
+        }
         else if (Selection.gameObjects.Length > 1)
+        {
             selectionMessage = "Select ONE object ONLY please";
+            //EditorUtility.DisplayDialog("Invalid Selection", "You must select ONLY ONE object.", "OK");
+        }
         else
         {
             selectedObject = Selection.activeGameObject;
             selectedRenderer = selectedObject.GetComponent<Renderer>();
 
             if (selectedRenderer == null)
+            {
                 selectionMessage = "Selected object doesnt have a renderer";
+                //EditorUtility.DisplayDialog("Invalid Selection", "You must select an object with a renderer.", "OK");
+            }
             else
             {
                 hasValidSelection = true;
