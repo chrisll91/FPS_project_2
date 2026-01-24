@@ -8,6 +8,8 @@ public class LevelDesignerTool : EditorWindow
     private bool isPreviewMode = true;
     private bool showConfirmDialog;
     private bool shouldChildToOriginal = false;
+    private bool hasShownInvalidSelectionPopup = false;
+
 
 
     // for the user to change
@@ -33,7 +35,7 @@ public class LevelDesignerTool : EditorWindow
     private string selectionMessage;
     private Vector3 objectSize;
     private Material selectedMaterial;
-    private GUIStyle statusStyle;
+    
 
 
 
@@ -49,20 +51,22 @@ public class LevelDesignerTool : EditorWindow
     {
         // Handle hotkeys first so changes are applied immediately.
         HandleHotkeys();
-        DrawHeader();
+        Header();
         DrawInstructions();
-        DrawSelectionStatus();
-        CreateCopiesOfItem();
+        SelectionStatus();
+        HandleCreateCopiesOfItem();
         DrawObjectSize();
     }
 
-    private void DrawHeader()
+    private void Header()
     {
         GUILayout.Label("Level Designer Utility Tool", EditorStyles.boldLabel);
 
         // Tooltip text appears when hovering over "Hotkeys".
-        GUILayout.Label(new GUIContent("Hotkeys", "Ctrl + Right = +1 Right\nCtrl + Left = -1 Right\nCtrl + Up = +1 Left\nCtrl + Down = -1 Left"));
+        GUI.color = Color.aquamarine;
+        GUILayout.Label(new GUIContent("Hotkeys (hover)", "Ctrl + Right = add one to the Right\nCtrl + Left = subtract one from the Right\nCtrl + Up = add one to the Left\nCtrl + Down = subtract one from the Left"));
         GUILayout.Space(15);
+        GUI.color = Color.white;
     }
 
     private void DrawInstructions()
@@ -74,7 +78,7 @@ public class LevelDesignerTool : EditorWindow
             MessageType.Info);
     }
 
-    private void DrawSelectionStatus()
+    private void SelectionStatus()
     {
         // If selection changes, clear previews and reset values.
         if (Selection.activeGameObject != previousSelectedObject)
@@ -87,6 +91,7 @@ public class LevelDesignerTool : EditorWindow
             spacing = 0f;
             selectedMaterial = null;
             isPreviewMode = true;
+            hasShownInvalidSelectionPopup = false;
 
             previousSpacing = spacing;
             previousLeftCount = leftCount;
@@ -94,6 +99,7 @@ public class LevelDesignerTool : EditorWindow
 
             previousSelectedObject = Selection.activeGameObject;
         }
+
 
         selectedObject = null;
         selectedRenderer = null;
@@ -104,11 +110,20 @@ public class LevelDesignerTool : EditorWindow
         {
             selectionMessage = "No object selected";
 
+
         }
         else if (Selection.gameObjects.Length > 1)
         {
             selectionMessage = "Select ONE object ONLY please";
-            //EditorUtility.DisplayDialog("Invalid Selection", "You must select ONLY ONE object.", "OK");
+            if (!hasShownInvalidSelectionPopup)
+            {
+                EditorUtility.DisplayDialog(
+                    "Invalid Selection",
+                    "Selected only ONE OBJECT Please.",
+                    "I understand"
+                );
+                hasShownInvalidSelectionPopup = true;
+            }
         }
         else
         {
@@ -118,7 +133,15 @@ public class LevelDesignerTool : EditorWindow
             if (selectedRenderer == null)
             {
                 selectionMessage = "Selected object doesnt have a renderer";
-                //EditorUtility.DisplayDialog("Invalid Selection", "You must select an object with a renderer.", "OK");
+                if (!hasShownInvalidSelectionPopup)
+                {
+                    EditorUtility.DisplayDialog(
+                        "Invalid Selection",
+                        "Selected object NEEDS TO HAVE A RENDERER.",
+                        "I dont understand"
+                    );
+                    hasShownInvalidSelectionPopup = true;
+                }
             }
             else
             {
@@ -127,23 +150,22 @@ public class LevelDesignerTool : EditorWindow
             }
         }
 
-        // Display selection status
+        // Display selection status with green correct or red wrong
+
         GUI.color = hasValidSelection ? Color.green : Color.red;
         GUILayout.Label(selectionMessage);
+
         GUI.color = Color.white;
 
-        GUILayout.Label("Selected Object: " +
-            (selectedObject != null ? selectedObject.name : "None"));
+        GUILayout.Label("Selected Object: " + (selectedObject != null ? selectedObject.name : "No object selected"));
 
         GUILayout.Space(10);
     }
 
-    private void CreateCopiesOfItem()
+    private void HandleCreateCopiesOfItem()
     {
-        // Material picker (ObjectField)
-        selectedMaterial = (Material)EditorGUILayout.ObjectField(
-            new GUIContent("Material", "Change material for original + copies"),
-            selectedMaterial, typeof(Material), false);
+        // Material choosing
+        selectedMaterial = (Material)EditorGUILayout.ObjectField(new GUIContent("Material", "Change material for original + copies"), selectedMaterial, typeof(Material), false);
 
         // Apply material to original + preview copies immediately when changed.
         if (selectedMaterial != null)
@@ -151,12 +173,11 @@ public class LevelDesignerTool : EditorWindow
             ApplyMaterialToAll(selectedMaterial);
         }
 
-        // Toggle for parenting copies to original when committed
-        shouldChildToOriginal = GUILayout.Toggle(
-            shouldChildToOriginal,
-            new GUIContent("Child to Parent", "If enabled, copies will be parented to the original object when committed."));
+        // Toggle part for "parenting to child"
+        shouldChildToOriginal = GUILayout.Toggle(shouldChildToOriginal, new GUIContent("Child to Parent", "If enabled, copies will be parented to the original object when committed."));
 
-        // Name prefix for the copies
+
+        // Name for the copies
         copyNamePrefix = EditorGUILayout.TextField("Copy Name", copyNamePrefix);
 
         // Commit button opens confirmation dialog
@@ -202,16 +223,18 @@ public class LevelDesignerTool : EditorWindow
             int newCount = EditorGUILayout.IntField("Right X Axis Count", rightCount);
             newCount = Mathf.Max(0, newCount);
 
-            // If values changed, recreate preview copies
+            // If values changed update the "preview" inmediately
             if (newCount != previousRightCount || leftCount != previousLeftCount || spacing != previousSpacing)
             {
-                // delete all old preview copies
+                // delete all old preview copies as the values are changed
                 for (int i = previewCopies.Count - 1; i >= 0; i--)
+                {
                     DestroyImmediate(previewCopies[i]);
+                }
 
                 previewCopies.Clear();
 
-                // generate left copies
+                // generate left copies when values change
                 for (int i = 1; i <= leftCount; i++)
                 {
                     Vector3 offset = Vector3.left * (objectSize.x + spacing) * i;
@@ -225,7 +248,7 @@ public class LevelDesignerTool : EditorWindow
                     previewCopies.Add(copy);
                 }
 
-                // generate right copies
+                // generate right copies when valies are changed
                 for (int i = 1; i <= newCount; i++)
                 {
                     Vector3 offset = Vector3.right * (objectSize.x + spacing) * i;
@@ -254,7 +277,7 @@ public class LevelDesignerTool : EditorWindow
 
         objectSize = selectedRenderer.bounds.size;
 
-        EditorGUILayout.LabelField("Object Size (World Units)", EditorStyles.boldLabel);
+        EditorGUILayout.LabelField("Object Size in Unity Units", EditorStyles.boldLabel);
         EditorGUILayout.Vector3Field("Size", objectSize);
     }
 
@@ -271,7 +294,7 @@ public class LevelDesignerTool : EditorWindow
         if (e.keyCode == KeyCode.UpArrow) leftCount++;
         if (e.keyCode == KeyCode.DownArrow) leftCount = Mathf.Max(0, leftCount - 1);
 
-        e.Use(); // consume the event
+        e.Use(); // consume the event needed aparently
     }
 
     private void ApplyMaterialToAll(Material mat)
