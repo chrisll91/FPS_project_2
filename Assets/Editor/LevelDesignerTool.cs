@@ -5,18 +5,18 @@ using UnityEngine;
 public class LevelDesignerTool : EditorWindow
 {
     private bool hasValidSelection;
-    private bool isPreviewMode = true;
+    private bool isPreviewMode;
     private bool showConfirmDialog;
-    private bool shouldChildToOriginal = false;
-    private bool hasShownInvalidSelectionPopup = false;
-
-
+    private bool shouldChildToOriginal;
+    
 
     // for the user to change
     private float spacing = 0f;
     private int leftCount = 0;
     private int rightCount = 0;
     private string copyNamePrefix = "Copy";
+    private Vector3 rotationOffset;
+
 
 
     // track previous spacing for updating
@@ -57,6 +57,12 @@ public class LevelDesignerTool : EditorWindow
         HandleCreateCopiesOfItem();
         DrawObjectSize();
     }
+    private void InvalidatePreview()
+    {
+        previousSpacing = -1f;
+        previousLeftCount = -1;
+        previousRightCount = -1;
+    }
 
     private void Header()
     {
@@ -72,8 +78,8 @@ public class LevelDesignerTool : EditorWindow
     private void DrawInstructions()
     {
         EditorGUILayout.HelpBox(
-            "1. Select one or more GameObjects in the scene.\n" +
-            "2. The tool will validate your selection.\n" +
+            "1. Select ONE GameObject with a Renderer in the scene.\n" +
+            "2. Change the name before making the copies.\n" +
             "3. Actions will become available when the selection is valid.",
             MessageType.Info);
     }
@@ -91,7 +97,7 @@ public class LevelDesignerTool : EditorWindow
             spacing = 0f;
             selectedMaterial = null;
             isPreviewMode = true;
-            hasShownInvalidSelectionPopup = false;
+            rotationOffset = Vector3.zero; 
 
             previousSpacing = spacing;
             previousLeftCount = leftCount;
@@ -110,20 +116,11 @@ public class LevelDesignerTool : EditorWindow
         {
             selectionMessage = "No object selected";
 
-
         }
         else if (Selection.gameObjects.Length > 1)
         {
-            selectionMessage = "Select ONE object ONLY please";
-            if (!hasShownInvalidSelectionPopup)
-            {
-                EditorUtility.DisplayDialog(
-                    "Invalid Selection",
-                    "Selected only ONE OBJECT Please.",
-                    "I understand"
-                );
-                hasShownInvalidSelectionPopup = true;
-            }
+            selectionMessage = "Select ONE object ONLY please";      
+            
         }
         else
         {
@@ -133,15 +130,7 @@ public class LevelDesignerTool : EditorWindow
             if (selectedRenderer == null)
             {
                 selectionMessage = "Selected object doesnt have a renderer";
-                if (!hasShownInvalidSelectionPopup)
-                {
-                    EditorUtility.DisplayDialog(
-                        "Invalid Selection",
-                        "Selected object NEEDS TO HAVE A RENDERER.",
-                        "I dont understand"
-                    );
-                    hasShownInvalidSelectionPopup = true;
-                }
+                
             }
             else
             {
@@ -214,6 +203,16 @@ public class LevelDesignerTool : EditorWindow
         // Only show controls if selection is valid and preview mode is active
         if (hasValidSelection && isPreviewMode)
         {
+            EditorGUI.BeginChangeCheck();
+            rotationOffset = EditorGUILayout.Vector3Field(
+                new GUIContent("Rotation Offset", "Extra rotation applied to copies"),
+                rotationOffset
+            );
+            if (EditorGUI.EndChangeCheck())
+            {
+                InvalidatePreview();
+            }
+
             spacing = EditorGUILayout.FloatField("Extra Spacing", spacing);
             spacing = Mathf.Max(0f, spacing);
 
@@ -237,12 +236,11 @@ public class LevelDesignerTool : EditorWindow
                 // generate left copies when values change
                 for (int i = 1; i <= leftCount; i++)
                 {
-                    Vector3 offset = Vector3.left * (objectSize.x + spacing) * i;
+                    Vector3 offset = -selectedObject.transform.right * (objectSize.x + spacing) * i;
 
-                    GameObject copy = Instantiate(selectedObject,
-                        selectedObject.transform.position + offset,
-                        selectedObject.transform.rotation);
+                    Quaternion rotation = selectedObject.transform.rotation * Quaternion.Euler(rotationOffset);
 
+                    GameObject copy = Instantiate(selectedObject, selectedObject.transform.position + offset, rotation);
                     Undo.RegisterCreatedObjectUndo(copy, "Create Copy");
                     copy.name = $"{copyNamePrefix}_L{i}";
                     previewCopies.Add(copy);
@@ -251,12 +249,11 @@ public class LevelDesignerTool : EditorWindow
                 // generate right copies when valies are changed
                 for (int i = 1; i <= newCount; i++)
                 {
-                    Vector3 offset = Vector3.right * (objectSize.x + spacing) * i;
+                    Vector3 offset = selectedObject.transform.right * (objectSize.x + spacing) * i;
 
-                    GameObject copy = Instantiate(selectedObject,
-                        selectedObject.transform.position + offset,
-                        selectedObject.transform.rotation);
+                    Quaternion rotation = selectedObject.transform.rotation * Quaternion.Euler(rotationOffset);
 
+                    GameObject copy = Instantiate(selectedObject, selectedObject.transform.position + offset,rotation);
                     Undo.RegisterCreatedObjectUndo(copy, "Create Copy");
                     copy.name = $"{copyNamePrefix}_R{i}";
                     previewCopies.Add(copy);
@@ -275,9 +272,9 @@ public class LevelDesignerTool : EditorWindow
     {
         if (!hasValidSelection) return;
 
-        objectSize = selectedRenderer.bounds.size;
+        objectSize = Vector3.Scale(selectedRenderer.localBounds.size, selectedObject.transform.lossyScale);
 
-        EditorGUILayout.LabelField("Object Size in Unity Units", EditorStyles.boldLabel);
+        EditorGUILayout.LabelField("Object size For Reference Only", EditorStyles.boldLabel);
         EditorGUILayout.Vector3Field("Size", objectSize);
     }
 
