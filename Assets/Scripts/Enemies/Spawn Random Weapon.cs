@@ -6,7 +6,7 @@ using UnityEngine;
 public class SpawnRandomWeapon : MonoBehaviour
 {
     [SerializeField] GameObject[] weaponPrefabs;
-    //[SerializeField] float respawnDelay = 1f;
+    
 
     private void Start()
     {
