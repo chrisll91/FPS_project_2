@@ -7,16 +7,17 @@ public abstract class Pickup : MonoBehaviour
     [SerializeField] float rotationSpeedx = 100f;
     [SerializeField] float rotationSpeedy = 100f;
     [SerializeField] float rotationSpeedz = 100f;
-    const string PLAYER_STRING = "Player";
 
-    // base for the weapon pickups with customizable rotation
+   
+
+    const string PLAYER_STRING = "Player";
 
    
     private void Update()
     {
         transform.Rotate(rotationSpeedx * Time.deltaTime, rotationSpeedy * Time.deltaTime, rotationSpeedz * Time.deltaTime);
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other) 
     {
         if (other.CompareTag(PLAYER_STRING))
         {
@@ -34,9 +35,10 @@ public abstract class Pickup : MonoBehaviour
         if (other.CompareTag(PLAYER_STRING))
         {
             OnPickup(activeWeapon);
-            this.gameObject.SetActive(false);
+            Destroy(gameObject);
         }
     }
 
+    
     protected abstract void OnPickup(activeWeapon activeWeapon);
 }

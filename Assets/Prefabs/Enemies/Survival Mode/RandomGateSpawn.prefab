@@ -13,7 +13,7 @@ GameObject:
   m_Layer: 0
   m_Name: RandomGateSpawn
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 2800000, guid: c6c36e7bde8314f4f902e9549302a96a, type: 3}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -49,4 +49,3 @@ MonoBehaviour:
   - {fileID: 6796087758122118680, guid: 4911738394a9c7043acd3738f8ca6277, type: 3}
   - {fileID: 6796087758122118680, guid: 78c21afde3c762c41892597ad8ef283f, type: 3}
   respawnDelay: 45
-  gameManager: {fileID: 0}

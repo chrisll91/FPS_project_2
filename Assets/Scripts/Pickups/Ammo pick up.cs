@@ -1,13 +1,35 @@
 using UnityEngine;
 
-public class Ammopickup : Pickup
+public class Ammopickup : MonoBehaviour
 {
 
     [SerializeField] int ammoAmount = 100;
-    protected override void OnPickup(activeWeapon activeWeapon)
+    [SerializeField] float rotationSpeedy = 100f;
+    const string PLAYER_STRING = "Player";
+
+    private void Update()
     {
-        
-        //activeWeapon.AdjustAmmo(ammoAmount); enable this if i want the ammo pick up to refill the current weapon magazine aswell
-        activeWeapon.adjustAmmoReserve(ammoAmount);
+        transform.Rotate(0, rotationSpeedy * Time.deltaTime, 0);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag(PLAYER_STRING))
+        {
+            Debug.Log("PLAYER TRIGGER ENTERED");
+        }
+        else
+        {
+            return;
+        }
+
+        activeWeapon activeWeapon = other.GetComponentInChildren<activeWeapon>();
+
+        if (activeWeapon != null && activeWeapon.currentWeaponSO.reserveAmmo < activeWeapon.currentWeaponSO.totalAmmoCapacity)
+        {               
+            
+            activeWeapon.adjustAmmoReserve(ammoAmount);           
+            Destroy(gameObject);
+        }
     }
 }

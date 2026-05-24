@@ -1,42 +1,44 @@
 using StarterAssets;
 using UnityEngine;
 
-
 public class PauseMenu : MonoBehaviour
 {
-    
-    public GameObject pauseScreen;
-    StarterAssetsInputs StarterAssetsInputs;
+    [SerializeField] GameObject pauseScreen;
+
+    private StarterAssetsInputs starterAssetsInputs;
+
+    private bool isPaused = false;
 
     private void Awake()
     {
-        StarterAssetsInputs = FindFirstObjectByType<StarterAssetsInputs>();
+        starterAssetsInputs =
+            FindFirstObjectByType<StarterAssetsInputs>();
+
+        pauseScreen.SetActive(false);
     }
 
+    private void Update()
+    {
+        if (starterAssetsInputs.Pause)
+        {
+            TogglePause();
 
-
+            starterAssetsInputs.Pause = false;
+        }
+    }
 
     public void TogglePause()
     {
-        
+        isPaused = !isPaused;
 
-        if (StarterAssetsInputs.Pause)
-        {
-            pauseScreen.SetActive(false);
-            Time.timeScale = 1f;
-            Debug.Log(StarterAssetsInputs.Pause);
-            return;
+        pauseScreen.SetActive(isPaused);
 
-        }
-        if(!StarterAssetsInputs.Pause) 
-        {
-            pauseScreen.SetActive(true);
-            Time.timeScale = 0f;
-            Debug.Log(StarterAssetsInputs.Pause);
-            return;
+        Time.timeScale = isPaused ? 0f : 1f;
 
-        }
+        Cursor.lockState = isPaused
+            ? CursorLockMode.None
+            : CursorLockMode.Locked;
 
-        
+        Debug.Log("Pause toggled");
     }
 }

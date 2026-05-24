@@ -16,14 +16,9 @@ public class activeWeapon : MonoBehaviour
     [SerializeField] TMP_Text ammoText;
     [SerializeField] TMP_Text ammoReserve;
 
-    //[SerializeField] private List<WeaponSO> ownedWeapons = new List<WeaponSO>();
-    //private int currentWeaponIndex = 0;
-
     AudioSource audioSource;
     
-
-
-    WeaponSO currentWeaponSO;
+    public WeaponSO currentWeaponSO;
     Animator animator;
     StarterAssetsInputs StarterAssetsInputs;
     Weapon currentWeapon;
@@ -32,15 +27,11 @@ public class activeWeapon : MonoBehaviour
     const string SHOOT_STRING = "Shoot";
     const string RELOAD_STRING = "Reload";
     float TimeSinceLastShot = 0f;
-    //float TimeSinceLastScroll = .2f;
+ 
     float defaultZoom;
     float defaultRotationSpeed;
     public bool isRealoding = false;
-
     
-
-
-
 
     private void Awake()
     {
@@ -51,6 +42,15 @@ public class activeWeapon : MonoBehaviour
         defaultRotationSpeed = FirstPersonController.RotationSpeed;
         audioSource = GetComponent<AudioSource>();
 
+    }
+    private void OnEnable()
+    {
+        PlayerHealth.OnPlayerDied += HandlePlayerDeath;
+    }
+
+    private void OnDisable()
+    {
+        PlayerHealth.OnPlayerDied -= HandlePlayerDeath;
     }
     private void Start()
     {
@@ -64,7 +64,6 @@ public class activeWeapon : MonoBehaviour
         HandleShoot();
         HandleZoom();
         HandleReload();
-        //HandleScrollWeapon();
 
     }
 
@@ -109,7 +108,7 @@ public class activeWeapon : MonoBehaviour
         Weapon newWeapon = Instantiate(weaponSO.weaponPrefab,transform).GetComponent<Weapon>(); 
         currentWeapon = newWeapon;
         this.currentWeaponSO = weaponSO;
-        //ownedWeapons.Add(currentWeaponSO);
+        
 
 
         AdjustAmmo(weaponSO.magazineSize);
@@ -120,8 +119,6 @@ public class activeWeapon : MonoBehaviour
     public void HandleReload()
     {
         if (!StarterAssetsInputs.Reload) return;
-
-        // consume input immediately
         StarterAssetsInputs.Reload = false;
 
         if (isRealoding) return;
@@ -133,8 +130,15 @@ public class activeWeapon : MonoBehaviour
 
 
     }
+    private void HandlePlayerDeath()
+    {
+        ZoomWeapon.SetActive(false);
 
+        playerFollowCamera.m_Lens.FieldOfView = defaultZoom;
+        weaponCamera.fieldOfView = defaultZoom;
 
+        FirstPersonController.ChangeRotationSpeed(defaultRotationSpeed);
+    }
 
 
     IEnumerator ReloadGunRoutine()

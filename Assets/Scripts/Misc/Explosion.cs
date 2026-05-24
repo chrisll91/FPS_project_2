@@ -2,14 +2,18 @@ using UnityEngine;
 
 public class Explosion : MonoBehaviour
 {
-    [SerializeField] float radius = 5.5f;
-    [SerializeField] int VSplayerExplosionDamage = 4;
-    [SerializeField] int VSgateExplosionDamage = 10;
+    float radius = 1.75f;
+    
+    int VSgateExplosionDamage = 10;
+    
+
 
     private void Start()
     {
         Explode();
     }
+
+    
 
     private void OnDrawGizmos()
     {
@@ -19,7 +23,7 @@ public class Explosion : MonoBehaviour
 
     void Explode()
     {
-        Debug.Log("im alive somewhere");
+        
         Collider[] hitColliders = Physics.OverlapSphere(transform.position, radius);
 
         foreach (Collider hitCollider in hitColliders)
@@ -27,7 +31,8 @@ public class Explosion : MonoBehaviour
             PlayerHealth playerHealth = hitCollider.GetComponent<PlayerHealth>();
             if (playerHealth != null)
             {
-                playerHealth.takeDamage(VSplayerExplosionDamage);
+                playerHealth.takeDamage(SurvivalModeSceneManager.GlobalExplosionDamage);
+
             }
 
             GateHealth gateHealth = hitCollider.GetComponent<GateHealth>();

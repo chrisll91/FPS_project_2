@@ -20,6 +20,8 @@ public class PlayerHealth : MonoBehaviour
     public int currentHealth;
     int GameOverVirtalCameraPriority = 20;
 
+    public static event Action OnPlayerDied;
+
     private void Awake()
     {
         currentHealth = StartingHealth;
@@ -43,6 +45,9 @@ public class PlayerHealth : MonoBehaviour
             if (gm != null)
             {
                 gm.OnPlayerDeath();
+                OnPlayerDied?.Invoke();
+
+                Debug.Log("Player Died");
             }
             Destroy(this.gameObject);
 

@@ -337,50 +337,41 @@ Transform:
   - {fileID: 176198867}
   m_Father: {fileID: 1218562957}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &111220971 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8642225304373351647, guid: 50a0925b0c22af146a2d15615f815a1c, type: 3}
-  m_PrefabInstance: {fileID: 1888443079}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &117245926
+--- !u!1001 &92518784
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1762161775}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 165367157833176195, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
       propertyPath: m_Name
       value: Health Pick Up
       objectReference: {fileID: 0}
-    - target: {fileID: 392120256790728767, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.75
+    - target: {fileID: 165367157833176195, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1826329714354872507, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.8
+    - target: {fileID: 1494410214119329762, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1826329714354872507, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1826329714354872507, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.8
+    - target: {fileID: 1559188774396572603, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1826329714354872507, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 31.75661
+      value: 22.710003
       objectReference: {fileID: 0}
     - target: {fileID: 1826329714354872507, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.6999998
+      value: 1.03
       objectReference: {fileID: 0}
     - target: {fileID: 1826329714354872507, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8.393606
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 1826329714354872507, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
       propertyPath: m_LocalRotation.w
@@ -388,15 +379,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1826329714354872507, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1826329714354872507, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1826329714354872507, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1826329714354872507, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -410,82 +401,60 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1826329714354872507, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
+    - target: {fileID: 2042882062084092817, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2521045572573426164, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.5
+    - target: {fileID: 2243034565398646202, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2575620184558158069, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1.0009999
+    - target: {fileID: 2322269295274287526, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3885717558315977853, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1.079
+    - target: {fileID: 3768767993480240387, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4185095086563369023, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.251
+    - target: {fileID: 4140297958973203161, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4325304490822619068, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.53
+    - target: {fileID: 5284105002346585362, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5877414128738778839, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1.3139999
+    - target: {fileID: 6447814441702337492, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6249325852296607635, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.49899995
+    - target: {fileID: 7550297381134944617, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7272457526190415773, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.25100005
+    - target: {fileID: 8509597711827769258, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7429305786398059508, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.25
+    - target: {fileID: 8588252103023381163, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7938587498123328258, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1.25
+    - target: {fileID: 8859744207270330969, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8503403209652508664, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 8839135751442576145, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.251
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1184864548108127167, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
-    - {fileID: 2681881132780507547, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
-    - {fileID: 8479699204704441281, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
-    - {fileID: 5514997406855728012, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
-    - {fileID: 4087132256774002381, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
-    - {fileID: 5215176204797703128, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
-    - {fileID: 2458266949853029659, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
-    - {fileID: 3253090241648424990, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
-    - {fileID: 8143649849467515727, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
-    - {fileID: 6285996414888411569, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
-    - {fileID: 4311305351761298443, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
-    - {fileID: 7843022366641324168, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
-    - {fileID: 6385839104091926146, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 165367157833176195, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 615422442}
-    - targetCorrespondingSourceObject: {fileID: 165367157833176195, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 615422441}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
+--- !u!4 &111220971 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8642225304373351647, guid: 50a0925b0c22af146a2d15615f815a1c, type: 3}
+  m_PrefabInstance: {fileID: 1888443079}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &125164688 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 631637468863465233, guid: 6d134a339e8e4c348b361fffb0c0a32f, type: 3}
@@ -1469,6 +1438,10 @@ PrefabInstance:
       value: Turret (1)
       objectReference: {fileID: 0}
     - target: {fileID: 631637468863465233, guid: 6d134a339e8e4c348b361fffb0c0a32f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 631637468863465233, guid: 6d134a339e8e4c348b361fffb0c0a32f, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -1512,14 +1485,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1436100389606701371, guid: 6d134a339e8e4c348b361fffb0c0a32f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1469200216260509634, guid: 6d134a339e8e4c348b361fffb0c0a32f, type: 3}
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 1868900489}
+    - target: {fileID: 2798962440430840905, guid: 6d134a339e8e4c348b361fffb0c0a32f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6886091740954884011, guid: 6d134a339e8e4c348b361fffb0c0a32f, type: 3}
+      propertyPath: attackRange
+      value: 75
+      objectReference: {fileID: 0}
     - target: {fileID: 6886091740954884011, guid: 6d134a339e8e4c348b361fffb0c0a32f, type: 3}
       propertyPath: playerTargetPoint
       value: 
       objectReference: {fileID: 618313200}
+    - target: {fileID: 7906292971696629256, guid: 6d134a339e8e4c348b361fffb0c0a32f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3141,9 +3130,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1036100138}
     m_Modifications:
+    - target: {fileID: 4206646575609132507, guid: ec7602bb669c5704e9bd45477864a01e, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5680017570670886017, guid: ec7602bb669c5704e9bd45477864a01e, type: 3}
       propertyPath: m_Name
       value: Sniper Riffle Pick up
+      objectReference: {fileID: 0}
+    - target: {fileID: 5680017570670886017, guid: ec7602bb669c5704e9bd45477864a01e, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6705708125991723930, guid: ec7602bb669c5704e9bd45477864a01e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3183,6 +3180,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6705708125991723930, guid: ec7602bb669c5704e9bd45477864a01e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7143177797600212931, guid: ec7602bb669c5704e9bd45477864a01e, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -4104,9 +4105,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1036100138}
     m_Modifications:
+    - target: {fileID: 4206646575609132507, guid: ec7602bb669c5704e9bd45477864a01e, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5680017570670886017, guid: ec7602bb669c5704e9bd45477864a01e, type: 3}
       propertyPath: m_Name
       value: Sniper Riffle Pick up
+      objectReference: {fileID: 0}
+    - target: {fileID: 5680017570670886017, guid: ec7602bb669c5704e9bd45477864a01e, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6705708125991723930, guid: ec7602bb669c5704e9bd45477864a01e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4146,6 +4155,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6705708125991723930, guid: ec7602bb669c5704e9bd45477864a01e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7143177797600212931, guid: ec7602bb669c5704e9bd45477864a01e, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -4394,7 +4407,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4322498136235231713, guid: 2c4077d74e9bf314aba625e6b33fdc3d, type: 3}
       propertyPath: m_LocalScale.y
-      value: 5.8672
+      value: 12.137477
       objectReference: {fileID: 0}
     - target: {fileID: 4322498136235231713, guid: 2c4077d74e9bf314aba625e6b33fdc3d, type: 3}
       propertyPath: m_LocalScale.z
@@ -4406,11 +4419,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4322498136235231713, guid: 2c4077d74e9bf314aba625e6b33fdc3d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.2000003
+      value: 9.38
       objectReference: {fileID: 0}
     - target: {fileID: 4322498136235231713, guid: 2c4077d74e9bf314aba625e6b33fdc3d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 92.35987
+      value: 89.64
       objectReference: {fileID: 0}
     - target: {fileID: 4322498136235231713, guid: 2c4077d74e9bf314aba625e6b33fdc3d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4558,10 +4571,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 306652305}
     m_Modifications:
+    - target: {fileID: 1007203462197355183, guid: 3a79c4b7ba7d91c449fbd56f8f24eb33, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1536451943392011205, guid: 3a79c4b7ba7d91c449fbd56f8f24eb33, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844610867174978150, guid: 3a79c4b7ba7d91c449fbd56f8f24eb33, type: 3}
+      propertyPath: attackRange
+      value: 75
+      objectReference: {fileID: 0}
     - target: {fileID: 2844610867174978150, guid: 3a79c4b7ba7d91c449fbd56f8f24eb33, type: 3}
       propertyPath: playerTargetPoint
       value: 
       objectReference: {fileID: 618313200}
+    - target: {fileID: 6790778383651940740, guid: 3a79c4b7ba7d91c449fbd56f8f24eb33, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7117253358554005737, guid: 3a79c4b7ba7d91c449fbd56f8f24eb33, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7711381669067717878, guid: 3a79c4b7ba7d91c449fbd56f8f24eb33, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7821060023879055887, guid: 3a79c4b7ba7d91c449fbd56f8f24eb33, type: 3}
       propertyPath: gameManager
       value: 
@@ -4569,6 +4606,10 @@ PrefabInstance:
     - target: {fileID: 8083503492013802204, guid: 3a79c4b7ba7d91c449fbd56f8f24eb33, type: 3}
       propertyPath: m_Name
       value: Faster projectile turret (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8083503492013802204, guid: 3a79c4b7ba7d91c449fbd56f8f24eb33, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8083503492013802204, guid: 3a79c4b7ba7d91c449fbd56f8f24eb33, type: 3}
       propertyPath: m_IsActive
@@ -5037,52 +5078,6 @@ Mesh:
       - serializedVersion: 1
         m_IndexStart: 0
         m_IndexCount: 0
---- !u!1 &615422440 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 165367157833176195, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
-  m_PrefabInstance: {fileID: 117245926}
-  m_PrefabAsset: {fileID: 0}
---- !u!136 &615422441
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 615422440}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1.57
-  m_Height: 1
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: -0.04}
---- !u!114 &615422442
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 615422440}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eade116c0b30238429519507a6330b52, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HealthPickUp
-  rotationSpeedy: 100
---- !u!4 &615422443 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1826329714354872507, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
-  m_PrefabInstance: {fileID: 117245926}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &618313200 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4135013735270702856, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
@@ -5375,6 +5370,10 @@ PrefabInstance:
       value: Turret (2)
       objectReference: {fileID: 0}
     - target: {fileID: 631637468863465233, guid: 6d134a339e8e4c348b361fffb0c0a32f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 631637468863465233, guid: 6d134a339e8e4c348b361fffb0c0a32f, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -5418,14 +5417,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1436100389606701371, guid: 6d134a339e8e4c348b361fffb0c0a32f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1469200216260509634, guid: 6d134a339e8e4c348b361fffb0c0a32f, type: 3}
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 1868900489}
+    - target: {fileID: 2798962440430840905, guid: 6d134a339e8e4c348b361fffb0c0a32f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6886091740954884011, guid: 6d134a339e8e4c348b361fffb0c0a32f, type: 3}
+      propertyPath: attackRange
+      value: 75
+      objectReference: {fileID: 0}
     - target: {fileID: 6886091740954884011, guid: 6d134a339e8e4c348b361fffb0c0a32f, type: 3}
       propertyPath: playerTargetPoint
       value: 
       objectReference: {fileID: 618313200}
+    - target: {fileID: 7906292971696629256, guid: 6d134a339e8e4c348b361fffb0c0a32f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5560,8 +5575,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
   StartingHealth: 10
-  DeathVirtualCamera: {fileID: 2102723393}
-  weaponCamera: {fileID: 314262411}
   shieldBars:
   - {fileID: 1818417515}
   - {fileID: 476610173}
@@ -5573,6 +5586,8 @@ MonoBehaviour:
   - {fileID: 1157317536}
   - {fileID: 65607966}
   - {fileID: 1142986195}
+  DeathVirtualCamera: {fileID: 2102723393}
+  weaponCamera: {fileID: 314262411}
   GameOverContainer: {fileID: 1844383626}
   currentHealth: 0
 --- !u!114 &674077993
@@ -5803,10 +5818,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 306652305}
     m_Modifications:
+    - target: {fileID: 1007203462197355183, guid: 3a79c4b7ba7d91c449fbd56f8f24eb33, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1536451943392011205, guid: 3a79c4b7ba7d91c449fbd56f8f24eb33, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844610867174978150, guid: 3a79c4b7ba7d91c449fbd56f8f24eb33, type: 3}
+      propertyPath: attackRange
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 2844610867174978150, guid: 3a79c4b7ba7d91c449fbd56f8f24eb33, type: 3}
       propertyPath: playerTargetPoint
       value: 
       objectReference: {fileID: 618313200}
+    - target: {fileID: 6790778383651940740, guid: 3a79c4b7ba7d91c449fbd56f8f24eb33, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7117253358554005737, guid: 3a79c4b7ba7d91c449fbd56f8f24eb33, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7711381669067717878, guid: 3a79c4b7ba7d91c449fbd56f8f24eb33, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7821060023879055887, guid: 3a79c4b7ba7d91c449fbd56f8f24eb33, type: 3}
       propertyPath: gameManager
       value: 
@@ -5814,6 +5853,10 @@ PrefabInstance:
     - target: {fileID: 8083503492013802204, guid: 3a79c4b7ba7d91c449fbd56f8f24eb33, type: 3}
       propertyPath: m_Name
       value: Turret (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8083503492013802204, guid: 3a79c4b7ba7d91c449fbd56f8f24eb33, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8083503492013802204, guid: 3a79c4b7ba7d91c449fbd56f8f24eb33, type: 3}
       propertyPath: m_IsActive
@@ -5882,13 +5925,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 375205426}
     m_Modifications:
+    - target: {fileID: 446399817763538084, guid: 4911738394a9c7043acd3738f8ca6277, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226920795746269239, guid: 4911738394a9c7043acd3738f8ca6277, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2253191546254147354, guid: 4911738394a9c7043acd3738f8ca6277, type: 3}
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 1868900489}
+    - target: {fileID: 4903388093488691433, guid: 4911738394a9c7043acd3738f8ca6277, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6691773039628885070, guid: 4911738394a9c7043acd3738f8ca6277, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6796087758122118680, guid: 4911738394a9c7043acd3738f8ca6277, type: 3}
       propertyPath: m_Name
       value: SpawnGate Fast Robot (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6796087758122118680, guid: 4911738394a9c7043acd3738f8ca6277, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6796087758122118680, guid: 4911738394a9c7043acd3738f8ca6277, type: 3}
       propertyPath: m_IsActive
@@ -6065,6 +6128,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pistol PIck Up
       objectReference: {fileID: 0}
+    - target: {fileID: 660017233821861729, guid: e67907339d97dbf46a5c7ec7196f64ec, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1942412413859649658, guid: e67907339d97dbf46a5c7ec7196f64ec, type: 3}
       propertyPath: m_LocalPosition.x
       value: 18.900856
@@ -6112,6 +6179,18 @@ PrefabInstance:
     - target: {fileID: 2865634000609014394, guid: e67907339d97dbf46a5c7ec7196f64ec, type: 3}
       propertyPath: rotationSpeedz
       value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 6308780652698751127, guid: e67907339d97dbf46a5c7ec7196f64ec, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9050723467565829691, guid: e67907339d97dbf46a5c7ec7196f64ec, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9144935650969680024, guid: e67907339d97dbf46a5c7ec7196f64ec, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6166,9 +6245,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 808572323786142317, guid: 2664e4195ac84d64888907acee35cfb3, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5335509512670009145, guid: 2664e4195ac84d64888907acee35cfb3, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9022252511757783401, guid: 2664e4195ac84d64888907acee35cfb3, type: 3}
       propertyPath: m_Name
       value: Ammo Pickup
+      objectReference: {fileID: 0}
+    - target: {fileID: 9022252511757783401, guid: 2664e4195ac84d64888907acee35cfb3, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6183,13 +6274,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 375205426}
     m_Modifications:
+    - target: {fileID: 446399817763538084, guid: bbb279a43261ff0498f62eb8315b4cc5, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226920795746269239, guid: bbb279a43261ff0498f62eb8315b4cc5, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2253191546254147354, guid: bbb279a43261ff0498f62eb8315b4cc5, type: 3}
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 1868900489}
+    - target: {fileID: 4903388093488691433, guid: bbb279a43261ff0498f62eb8315b4cc5, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6691773039628885070, guid: bbb279a43261ff0498f62eb8315b4cc5, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6796087758122118680, guid: bbb279a43261ff0498f62eb8315b4cc5, type: 3}
       propertyPath: m_Name
       value: Spawn Gate Tanky Robot
+      objectReference: {fileID: 0}
+    - target: {fileID: 6796087758122118680, guid: bbb279a43261ff0498f62eb8315b4cc5, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6796087758122118680, guid: bbb279a43261ff0498f62eb8315b4cc5, type: 3}
       propertyPath: m_IsActive
@@ -6521,6 +6632,10 @@ PrefabInstance:
       value: Turret
       objectReference: {fileID: 0}
     - target: {fileID: 631637468863465233, guid: 6d134a339e8e4c348b361fffb0c0a32f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 631637468863465233, guid: 6d134a339e8e4c348b361fffb0c0a32f, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -6564,14 +6679,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1436100389606701371, guid: 6d134a339e8e4c348b361fffb0c0a32f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1469200216260509634, guid: 6d134a339e8e4c348b361fffb0c0a32f, type: 3}
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 1868900489}
+    - target: {fileID: 2798962440430840905, guid: 6d134a339e8e4c348b361fffb0c0a32f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6886091740954884011, guid: 6d134a339e8e4c348b361fffb0c0a32f, type: 3}
+      propertyPath: attackRange
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 6886091740954884011, guid: 6d134a339e8e4c348b361fffb0c0a32f, type: 3}
       propertyPath: playerTargetPoint
       value: 
       objectReference: {fileID: 618313200}
+    - target: {fileID: 7906292971696629256, guid: 6d134a339e8e4c348b361fffb0c0a32f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6674,13 +6805,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3747116221788653050, guid: f5a2c66338fc00342949675c4368de2c, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4252298563870786931, guid: f5a2c66338fc00342949675c4368de2c, type: 3}
       propertyPath: m_Name
       value: Machine Gun PIck Up
       objectReference: {fileID: 0}
     - target: {fileID: 4252298563870786931, guid: f5a2c66338fc00342949675c4368de2c, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5742450321502178345, guid: f5a2c66338fc00342949675c4368de2c, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8054600480587851003, guid: f5a2c66338fc00342949675c4368de2c, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6735,9 +6878,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3747116221788653050, guid: f5a2c66338fc00342949675c4368de2c, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4252298563870786931, guid: f5a2c66338fc00342949675c4368de2c, type: 3}
       propertyPath: m_Name
       value: Machine Gun PIck Up
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252298563870786931, guid: f5a2c66338fc00342949675c4368de2c, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5742450321502178345, guid: f5a2c66338fc00342949675c4368de2c, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8054600480587851003, guid: f5a2c66338fc00342949675c4368de2c, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7184,13 +7343,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 375205426}
     m_Modifications:
+    - target: {fileID: 446399817763538084, guid: bbb279a43261ff0498f62eb8315b4cc5, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226920795746269239, guid: bbb279a43261ff0498f62eb8315b4cc5, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2253191546254147354, guid: bbb279a43261ff0498f62eb8315b4cc5, type: 3}
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 1868900489}
+    - target: {fileID: 4903388093488691433, guid: bbb279a43261ff0498f62eb8315b4cc5, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6691773039628885070, guid: bbb279a43261ff0498f62eb8315b4cc5, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6796087758122118680, guid: bbb279a43261ff0498f62eb8315b4cc5, type: 3}
       propertyPath: m_Name
       value: Spawn Gate Tanky Robot
+      objectReference: {fileID: 0}
+    - target: {fileID: 6796087758122118680, guid: bbb279a43261ff0498f62eb8315b4cc5, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6796087758122118680, guid: bbb279a43261ff0498f62eb8315b4cc5, type: 3}
       propertyPath: m_IsActive
@@ -7777,13 +7956,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 375205426}
     m_Modifications:
+    - target: {fileID: 446399817763538084, guid: 4911738394a9c7043acd3738f8ca6277, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226920795746269239, guid: 4911738394a9c7043acd3738f8ca6277, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2253191546254147354, guid: 4911738394a9c7043acd3738f8ca6277, type: 3}
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 1868900489}
+    - target: {fileID: 4903388093488691433, guid: 4911738394a9c7043acd3738f8ca6277, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6691773039628885070, guid: 4911738394a9c7043acd3738f8ca6277, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6796087758122118680, guid: 4911738394a9c7043acd3738f8ca6277, type: 3}
       propertyPath: m_Name
       value: SpawnGate Fast Robot (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6796087758122118680, guid: 4911738394a9c7043acd3738f8ca6277, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6796087758122118680, guid: 4911738394a9c7043acd3738f8ca6277, type: 3}
       propertyPath: m_IsActive
@@ -8681,6 +8880,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Health Pick Up
       objectReference: {fileID: 0}
+    - target: {fileID: 165367157833176195, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1826329714354872507, guid: 92b3c80f5b918c44fb39f81429365a25, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12.1397295
@@ -8919,9 +9122,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1036100138}
     m_Modifications:
+    - target: {fileID: 4206646575609132507, guid: ec7602bb669c5704e9bd45477864a01e, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5680017570670886017, guid: ec7602bb669c5704e9bd45477864a01e, type: 3}
       propertyPath: m_Name
       value: Sniper Riffle Pick up (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5680017570670886017, guid: ec7602bb669c5704e9bd45477864a01e, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6705708125991723930, guid: ec7602bb669c5704e9bd45477864a01e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8963,6 +9174,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7143177797600212931, guid: ec7602bb669c5704e9bd45477864a01e, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8976,10 +9191,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 306652305}
     m_Modifications:
+    - target: {fileID: 1007203462197355183, guid: 3a79c4b7ba7d91c449fbd56f8f24eb33, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1536451943392011205, guid: 3a79c4b7ba7d91c449fbd56f8f24eb33, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844610867174978150, guid: 3a79c4b7ba7d91c449fbd56f8f24eb33, type: 3}
+      propertyPath: attackRange
+      value: 75
+      objectReference: {fileID: 0}
     - target: {fileID: 2844610867174978150, guid: 3a79c4b7ba7d91c449fbd56f8f24eb33, type: 3}
       propertyPath: playerTargetPoint
       value: 
       objectReference: {fileID: 618313200}
+    - target: {fileID: 6790778383651940740, guid: 3a79c4b7ba7d91c449fbd56f8f24eb33, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7117253358554005737, guid: 3a79c4b7ba7d91c449fbd56f8f24eb33, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7711381669067717878, guid: 3a79c4b7ba7d91c449fbd56f8f24eb33, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7821060023879055887, guid: 3a79c4b7ba7d91c449fbd56f8f24eb33, type: 3}
       propertyPath: gameManager
       value: 
@@ -8987,6 +9226,10 @@ PrefabInstance:
     - target: {fileID: 8083503492013802204, guid: 3a79c4b7ba7d91c449fbd56f8f24eb33, type: 3}
       propertyPath: m_Name
       value: Faster projectile turret (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8083503492013802204, guid: 3a79c4b7ba7d91c449fbd56f8f24eb33, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8083503492013802204, guid: 3a79c4b7ba7d91c449fbd56f8f24eb33, type: 3}
       propertyPath: m_IsActive
@@ -9233,20 +9476,24 @@ PrefabInstance:
       value: Active From  The Start Turret
       objectReference: {fileID: 0}
     - target: {fileID: 631637468863465233, guid: 6d134a339e8e4c348b361fffb0c0a32f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 631637468863465233, guid: 6d134a339e8e4c348b361fffb0c0a32f, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 897529154478028751, guid: 6d134a339e8e4c348b361fffb0c0a32f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 42.51866
+      value: 37.32
       objectReference: {fileID: 0}
     - target: {fileID: 897529154478028751, guid: 6d134a339e8e4c348b361fffb0c0a32f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6
+      value: 1.36
       objectReference: {fileID: 0}
     - target: {fileID: 897529154478028751, guid: 6d134a339e8e4c348b361fffb0c0a32f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 173.0167
+      value: 140.252
       objectReference: {fileID: 0}
     - target: {fileID: 897529154478028751, guid: 6d134a339e8e4c348b361fffb0c0a32f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -9276,14 +9523,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1436100389606701371, guid: 6d134a339e8e4c348b361fffb0c0a32f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1469200216260509634, guid: 6d134a339e8e4c348b361fffb0c0a32f, type: 3}
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 1868900489}
+    - target: {fileID: 2798962440430840905, guid: 6d134a339e8e4c348b361fffb0c0a32f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6886091740954884011, guid: 6d134a339e8e4c348b361fffb0c0a32f, type: 3}
       propertyPath: playerTargetPoint
       value: 
       objectReference: {fileID: 618313200}
+    - target: {fileID: 7906292971696629256, guid: 6d134a339e8e4c348b361fffb0c0a32f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9552,9 +9811,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3747116221788653050, guid: f5a2c66338fc00342949675c4368de2c, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4252298563870786931, guid: f5a2c66338fc00342949675c4368de2c, type: 3}
       propertyPath: m_Name
       value: Machine Gun PIck Up (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252298563870786931, guid: f5a2c66338fc00342949675c4368de2c, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5742450321502178345, guid: f5a2c66338fc00342949675c4368de2c, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8054600480587851003, guid: f5a2c66338fc00342949675c4368de2c, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10282,10 +10557,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 306652305}
     m_Modifications:
+    - target: {fileID: 1007203462197355183, guid: 3a79c4b7ba7d91c449fbd56f8f24eb33, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1536451943392011205, guid: 3a79c4b7ba7d91c449fbd56f8f24eb33, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844610867174978150, guid: 3a79c4b7ba7d91c449fbd56f8f24eb33, type: 3}
+      propertyPath: attackRange
+      value: 75
+      objectReference: {fileID: 0}
     - target: {fileID: 2844610867174978150, guid: 3a79c4b7ba7d91c449fbd56f8f24eb33, type: 3}
       propertyPath: playerTargetPoint
       value: 
       objectReference: {fileID: 618313200}
+    - target: {fileID: 6790778383651940740, guid: 3a79c4b7ba7d91c449fbd56f8f24eb33, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7117253358554005737, guid: 3a79c4b7ba7d91c449fbd56f8f24eb33, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7711381669067717878, guid: 3a79c4b7ba7d91c449fbd56f8f24eb33, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7821060023879055887, guid: 3a79c4b7ba7d91c449fbd56f8f24eb33, type: 3}
       propertyPath: gameManager
       value: 
@@ -10293,6 +10592,10 @@ PrefabInstance:
     - target: {fileID: 8083503492013802204, guid: 3a79c4b7ba7d91c449fbd56f8f24eb33, type: 3}
       propertyPath: m_Name
       value: Faster projectile turret
+      objectReference: {fileID: 0}
+    - target: {fileID: 8083503492013802204, guid: 3a79c4b7ba7d91c449fbd56f8f24eb33, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8083503492013802204, guid: 3a79c4b7ba7d91c449fbd56f8f24eb33, type: 3}
       propertyPath: m_IsActive
@@ -10356,13 +10659,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 375205426}
     m_Modifications:
+    - target: {fileID: 446399817763538084, guid: bbb279a43261ff0498f62eb8315b4cc5, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226920795746269239, guid: bbb279a43261ff0498f62eb8315b4cc5, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2253191546254147354, guid: bbb279a43261ff0498f62eb8315b4cc5, type: 3}
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 1868900489}
+    - target: {fileID: 4903388093488691433, guid: bbb279a43261ff0498f62eb8315b4cc5, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6691773039628885070, guid: bbb279a43261ff0498f62eb8315b4cc5, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6796087758122118680, guid: bbb279a43261ff0498f62eb8315b4cc5, type: 3}
       propertyPath: m_Name
       value: Spawn Gate Tanky Robot (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6796087758122118680, guid: bbb279a43261ff0498f62eb8315b4cc5, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6796087758122118680, guid: bbb279a43261ff0498f62eb8315b4cc5, type: 3}
       propertyPath: m_IsActive
@@ -10449,13 +10772,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 375205426}
     m_Modifications:
+    - target: {fileID: 446399817763538084, guid: 78c21afde3c762c41892597ad8ef283f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226920795746269239, guid: 78c21afde3c762c41892597ad8ef283f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2253191546254147354, guid: 78c21afde3c762c41892597ad8ef283f, type: 3}
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 1868900489}
+    - target: {fileID: 4903388093488691433, guid: 78c21afde3c762c41892597ad8ef283f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6691773039628885070, guid: 78c21afde3c762c41892597ad8ef283f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6796087758122118680, guid: 78c21afde3c762c41892597ad8ef283f, type: 3}
       propertyPath: m_Name
       value: SpawnGateRobot (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6796087758122118680, guid: 78c21afde3c762c41892597ad8ef283f, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6796087758122118680, guid: 78c21afde3c762c41892597ad8ef283f, type: 3}
       propertyPath: m_IsActive
@@ -11077,13 +11420,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 375205426}
     m_Modifications:
+    - target: {fileID: 446399817763538084, guid: 4911738394a9c7043acd3738f8ca6277, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226920795746269239, guid: 4911738394a9c7043acd3738f8ca6277, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2253191546254147354, guid: 4911738394a9c7043acd3738f8ca6277, type: 3}
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 1868900489}
+    - target: {fileID: 4903388093488691433, guid: 4911738394a9c7043acd3738f8ca6277, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6691773039628885070, guid: 4911738394a9c7043acd3738f8ca6277, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6796087758122118680, guid: 4911738394a9c7043acd3738f8ca6277, type: 3}
       propertyPath: m_Name
       value: SpawnGate Fast Robot
+      objectReference: {fileID: 0}
+    - target: {fileID: 6796087758122118680, guid: 4911738394a9c7043acd3738f8ca6277, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6796087758122118680, guid: 4911738394a9c7043acd3738f8ca6277, type: 3}
       propertyPath: m_IsActive
@@ -11150,13 +11513,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 375205426}
     m_Modifications:
+    - target: {fileID: 446399817763538084, guid: 78c21afde3c762c41892597ad8ef283f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226920795746269239, guid: 78c21afde3c762c41892597ad8ef283f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2253191546254147354, guid: 78c21afde3c762c41892597ad8ef283f, type: 3}
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 1868900489}
+    - target: {fileID: 4903388093488691433, guid: 78c21afde3c762c41892597ad8ef283f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6691773039628885070, guid: 78c21afde3c762c41892597ad8ef283f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6796087758122118680, guid: 78c21afde3c762c41892597ad8ef283f, type: 3}
       propertyPath: m_Name
       value: SpawnGateRobot (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6796087758122118680, guid: 78c21afde3c762c41892597ad8ef283f, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6796087758122118680, guid: 78c21afde3c762c41892597ad8ef283f, type: 3}
       propertyPath: m_IsActive
@@ -11702,7 +12085,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 615422443}
   - {fileID: 1151785593}
   m_Father: {fileID: 1706578877}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12098,13 +12480,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 375205426}
     m_Modifications:
+    - target: {fileID: 446399817763538084, guid: 78c21afde3c762c41892597ad8ef283f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226920795746269239, guid: 78c21afde3c762c41892597ad8ef283f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2253191546254147354, guid: 78c21afde3c762c41892597ad8ef283f, type: 3}
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 1868900489}
+    - target: {fileID: 4903388093488691433, guid: 78c21afde3c762c41892597ad8ef283f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6691773039628885070, guid: 78c21afde3c762c41892597ad8ef283f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6796087758122118680, guid: 78c21afde3c762c41892597ad8ef283f, type: 3}
       propertyPath: m_Name
       value: SpawnGateRobot
+      objectReference: {fileID: 0}
+    - target: {fileID: 6796087758122118680, guid: 78c21afde3c762c41892597ad8ef283f, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6796087758122118680, guid: 78c21afde3c762c41892597ad8ef283f, type: 3}
       propertyPath: m_IsActive
@@ -12499,13 +12901,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1868900488}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4dbd08ef65bd7e5438a1a93a33425504, type: 3}
+  m_Script: {fileID: 11500000, guid: 96b26c1a2789b2541885f0660fa8f011, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   EnemiesLeftText: {fileID: 290944388}
   EnemiesKilledText: {fileID: 0}
   YouWinText: {fileID: 1269601377}
-  enemiesLeft: 0
+  WaitForMaxSpawnLimitSeconds: 30
 --- !u!4 &1868900490
 Transform:
   m_ObjectHideFlags: 0
@@ -13524,13 +13926,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 375205426}
     m_Modifications:
+    - target: {fileID: 446399817763538084, guid: 4911738394a9c7043acd3738f8ca6277, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226920795746269239, guid: 4911738394a9c7043acd3738f8ca6277, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2253191546254147354, guid: 4911738394a9c7043acd3738f8ca6277, type: 3}
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 1868900489}
+    - target: {fileID: 4903388093488691433, guid: 4911738394a9c7043acd3738f8ca6277, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6691773039628885070, guid: 4911738394a9c7043acd3738f8ca6277, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6796087758122118680, guid: 4911738394a9c7043acd3738f8ca6277, type: 3}
       propertyPath: m_Name
       value: SpawnGate Fast Robot
+      objectReference: {fileID: 0}
+    - target: {fileID: 6796087758122118680, guid: 4911738394a9c7043acd3738f8ca6277, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6796087758122118680, guid: 4911738394a9c7043acd3738f8ca6277, type: 3}
       propertyPath: m_IsActive
@@ -13642,9 +14064,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3747116221788653050, guid: f5a2c66338fc00342949675c4368de2c, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4252298563870786931, guid: f5a2c66338fc00342949675c4368de2c, type: 3}
       propertyPath: m_Name
       value: Machine Gun PIck Up (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252298563870786931, guid: f5a2c66338fc00342949675c4368de2c, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5742450321502178345, guid: f5a2c66338fc00342949675c4368de2c, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8054600480587851003, guid: f5a2c66338fc00342949675c4368de2c, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13813,6 +14251,10 @@ PrefabInstance:
       value: Turret (1)
       objectReference: {fileID: 0}
     - target: {fileID: 631637468863465233, guid: 6d134a339e8e4c348b361fffb0c0a32f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 631637468863465233, guid: 6d134a339e8e4c348b361fffb0c0a32f, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -13856,14 +14298,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1436100389606701371, guid: 6d134a339e8e4c348b361fffb0c0a32f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1469200216260509634, guid: 6d134a339e8e4c348b361fffb0c0a32f, type: 3}
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 1868900489}
+    - target: {fileID: 2798962440430840905, guid: 6d134a339e8e4c348b361fffb0c0a32f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6886091740954884011, guid: 6d134a339e8e4c348b361fffb0c0a32f, type: 3}
+      propertyPath: attackRange
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 6886091740954884011, guid: 6d134a339e8e4c348b361fffb0c0a32f, type: 3}
       propertyPath: playerTargetPoint
       value: 
       objectReference: {fileID: 618313200}
+    - target: {fileID: 7906292971696629256, guid: 6d134a339e8e4c348b361fffb0c0a32f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14067,13 +14525,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 375205426}
     m_Modifications:
+    - target: {fileID: 446399817763538084, guid: bbb279a43261ff0498f62eb8315b4cc5, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226920795746269239, guid: bbb279a43261ff0498f62eb8315b4cc5, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2253191546254147354, guid: bbb279a43261ff0498f62eb8315b4cc5, type: 3}
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 1868900489}
+    - target: {fileID: 4903388093488691433, guid: bbb279a43261ff0498f62eb8315b4cc5, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6691773039628885070, guid: bbb279a43261ff0498f62eb8315b4cc5, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6796087758122118680, guid: bbb279a43261ff0498f62eb8315b4cc5, type: 3}
       propertyPath: m_Name
       value: Spawn Gate Tanky Robot (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6796087758122118680, guid: bbb279a43261ff0498f62eb8315b4cc5, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6796087758122118680, guid: bbb279a43261ff0498f62eb8315b4cc5, type: 3}
       propertyPath: m_IsActive
@@ -14664,6 +15142,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pistol PIck Up (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 660017233821861729, guid: e67907339d97dbf46a5c7ec7196f64ec, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1942412413859649658, guid: e67907339d97dbf46a5c7ec7196f64ec, type: 3}
       propertyPath: m_LocalPosition.x
       value: 30.07674
@@ -14702,6 +15184,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1942412413859649658, guid: e67907339d97dbf46a5c7ec7196f64ec, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6308780652698751127, guid: e67907339d97dbf46a5c7ec7196f64ec, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9050723467565829691, guid: e67907339d97dbf46a5c7ec7196f64ec, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9144935650969680024, guid: e67907339d97dbf46a5c7ec7196f64ec, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -14911,10 +15405,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 306652305}
     m_Modifications:
+    - target: {fileID: 1007203462197355183, guid: 3a79c4b7ba7d91c449fbd56f8f24eb33, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1536451943392011205, guid: 3a79c4b7ba7d91c449fbd56f8f24eb33, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2844610867174978150, guid: 3a79c4b7ba7d91c449fbd56f8f24eb33, type: 3}
+      propertyPath: attackRange
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 2844610867174978150, guid: 3a79c4b7ba7d91c449fbd56f8f24eb33, type: 3}
       propertyPath: playerTargetPoint
       value: 
       objectReference: {fileID: 618313200}
+    - target: {fileID: 6790778383651940740, guid: 3a79c4b7ba7d91c449fbd56f8f24eb33, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7117253358554005737, guid: 3a79c4b7ba7d91c449fbd56f8f24eb33, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7711381669067717878, guid: 3a79c4b7ba7d91c449fbd56f8f24eb33, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7821060023879055887, guid: 3a79c4b7ba7d91c449fbd56f8f24eb33, type: 3}
       propertyPath: gameManager
       value: 
@@ -14922,6 +15440,10 @@ PrefabInstance:
     - target: {fileID: 8083503492013802204, guid: 3a79c4b7ba7d91c449fbd56f8f24eb33, type: 3}
       propertyPath: m_Name
       value: Turret (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8083503492013802204, guid: 3a79c4b7ba7d91c449fbd56f8f24eb33, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8083503492013802204, guid: 3a79c4b7ba7d91c449fbd56f8f24eb33, type: 3}
       propertyPath: m_IsActive
@@ -14987,3 +15509,4 @@ SceneRoots:
   - {fileID: 193733206}
   - {fileID: 1706578877}
   - {fileID: 1868900490}
+  - {fileID: 92518784}
