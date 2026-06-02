@@ -5,7 +5,7 @@ public class Projectile : MonoBehaviour
     [SerializeField] float speed = 20f;
     [SerializeField] GameObject projectileHitVFX;
 
-    int damage;
+    int damage; // damage value given in the turret script
     public Rigidbody rb;
     
 

@@ -46,8 +46,6 @@ public class PlayerHealth : MonoBehaviour
             {
                 gm.OnPlayerDeath();
                 OnPlayerDied?.Invoke();
-
-                Debug.Log("Player Died");
             }
             Destroy(this.gameObject);
 

@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class GateOrPlayerRobot : BaseRobot
 {
+
+    // Meant for my wave mode currently on hold probably forever.
     public Collider playerDetectionZone;
     private bool playerInRange = false;
     const string PLAYER_STRING = "Player";

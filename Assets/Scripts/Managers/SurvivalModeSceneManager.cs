@@ -54,9 +54,15 @@ public class SurvivalModeSceneManager : MonoBehaviour
         enemiesLeft += amount;
 
         if (EnemiesLeftText != null)
+        {
             EnemiesLeftText.text = "Enemies Left : " + enemiesLeft;
+        }
+
+        //only meant for tutorial and eventually wave mode (on hold indefinitely)
         if (enemiesLeft <= 0)
+        {
             WinGame();
+        }
     }
 
     public virtual void adjustEnemiesKilledText(int amount)
@@ -64,12 +70,14 @@ public class SurvivalModeSceneManager : MonoBehaviour
         enemiesKilled += amount;
 
         if (EnemiesKilledText != null)
+        {
             EnemiesKilledText.text = "Enemies killed: " + enemiesKilled;
+        }
 
         if (enemiesKilled % 25 == 0)
         {
             GlobalExplosionDamage++;
-            Debug.Log("Explosion Damage Increased to : " + GlobalExplosionDamage);
+            
         }
     }
 
