@@ -10,8 +10,6 @@ public class Robot : MonoBehaviour
 
     const string PLAYER_STRING = "Player";
     
-    
-
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -22,7 +20,6 @@ public class Robot : MonoBehaviour
         player = FindFirstObjectByType<FirstPersonController>();
     }
 
-    
     void Update()
     {
         if (!player)

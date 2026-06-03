@@ -8,13 +8,10 @@ public class SpawnGate : MonoBehaviour
     [SerializeField] Transform spawnPoint;
     [SerializeField] float spawnTime = 5f;
     [SerializeField] int MaxSpawnAmount = 10;
+
     int spawnAmount = 0;
-    
-
-
     PlayerHealth player;
     private Coroutine spawnCoroutine;
-
 
     private void Start()
     {
@@ -23,13 +20,10 @@ public class SpawnGate : MonoBehaviour
         spawnCoroutine = StartCoroutine(spawnRoutine());
 
     }
-
     public void adjustMaxSpawnAmount()
     {
         MaxSpawnAmount++;
-    }
-    
-
+    }   
     public void adjustSpawnAmount(int amount)
     {
         spawnAmount += amount;
@@ -38,7 +32,6 @@ public class SpawnGate : MonoBehaviour
             spawnCoroutine = StartCoroutine(spawnRoutine());
         }
     }
-    
     IEnumerator spawnRoutine()
     {
         
@@ -52,13 +45,10 @@ public class SpawnGate : MonoBehaviour
             {
                 health.spawnGate = this;
             }
-
             spawnAmount++;
             yield return new WaitForSeconds(spawnTime);
         }
-
         spawnCoroutine = null;
     }
-
 
 }

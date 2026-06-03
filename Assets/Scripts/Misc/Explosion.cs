@@ -5,15 +5,11 @@ public class Explosion : MonoBehaviour
     float radius = 1.75f;
     
     int VSgateExplosionDamage = 10;
-    
-
 
     private void Start()
     {
         Explode();
     }
-
-    
 
     private void OnDrawGizmos()
     {

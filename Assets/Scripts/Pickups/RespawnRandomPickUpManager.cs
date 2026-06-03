@@ -26,9 +26,10 @@ public class RespawnPickUpManager : MonoBehaviour
 
     private void SpawnRandomPickUp()
     {
-
+        // Choose one of the pickable items to be respawned.
         int randomIndex = Random.Range(0, PickUpPrefabs.Length);
         GameObject WhichPickupToSpawn = PickUpPrefabs[randomIndex];
+
         currentPickUp = Instantiate(WhichPickupToSpawn, transform.position, transform.rotation);
         isRespawning = false;
     }

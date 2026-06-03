@@ -7,7 +7,6 @@ public class Projectile : MonoBehaviour
 
     int damage; // damage value given in the turret script
     public Rigidbody rb;
-    
 
     const string PLAYER_STRING = "Player";
 

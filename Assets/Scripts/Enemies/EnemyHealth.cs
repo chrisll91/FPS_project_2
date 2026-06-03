@@ -29,13 +29,11 @@ public class EnemyHealth : MonoBehaviour
             roamingAudioSource.Play();
         }
 
-
     }
     public void takeDamage(int amount)
     {
         currentEnemyHealth -= amount;
         
-
         if (currentEnemyHealth <= 0) 
         {
             gameManager?.adjustEnemiesKilledText(1);

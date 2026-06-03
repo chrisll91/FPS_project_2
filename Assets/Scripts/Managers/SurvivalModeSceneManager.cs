@@ -13,16 +13,14 @@ public class SurvivalModeSceneManager : MonoBehaviour
     [SerializeField] GameObject YouWinText;
 
     public float WaitForMaxSpawnLimitSeconds = 30f;
-
     public static int GlobalExplosionDamage = 1;
-
     protected int enemiesLeft = 0;
     protected int enemiesKilled = 0;
+
     protected virtual void Start()
     {
         GlobalExplosionDamage = 1;
-        StartCoroutine(IncreaseMaxSpawnLimitRoutine());
-        
+        StartCoroutine(IncreaseMaxSpawnLimitRoutine());   
     }
 
     private void Update()
@@ -30,12 +28,12 @@ public class SurvivalModeSceneManager : MonoBehaviour
         if (Keyboard.current.escapeKey.wasPressedThisFrame)
         {
             SceneManager.LoadScene(0);
-
-        }
-        
+        } 
     }
     protected virtual IEnumerator IncreaseMaxSpawnLimitRoutine()
     {
+
+        // Go through each gate in the level and increase its maximum amount of enemies to be spawn over time.
         while (true)
         {
             yield return new WaitForSeconds(WaitForMaxSpawnLimitSeconds);
@@ -48,7 +46,6 @@ public class SurvivalModeSceneManager : MonoBehaviour
         }
     }
 
-    
     public virtual void adjustEnemiesText(int amount)
     {
         enemiesLeft += amount;

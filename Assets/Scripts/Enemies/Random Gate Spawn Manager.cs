@@ -7,7 +7,6 @@ public class RandomGateSpawnManager : MonoBehaviour
     [SerializeField] GameObject[] gatePrefabs;
     [SerializeField] float respawnDelay = 1f;
     
-
     private GameObject currentGate;
     private bool isRespawning = false;
 
@@ -25,7 +24,7 @@ public class RandomGateSpawnManager : MonoBehaviour
     }
     private void SpawnRandomGate()
     {
-        
+        // Choose 1 out of 3 possible gates to spawn at its location.
         int randomIndex = Random.Range(0, gatePrefabs.Length);
         GameObject WhichGateToSpawn = gatePrefabs[randomIndex];
 
@@ -45,7 +44,7 @@ public class RandomGateSpawnManager : MonoBehaviour
     }
 
 
-
+    // The gates will respawn after a set amount of time.
     private IEnumerator RespawnGate()
     {
         isRespawning = true;

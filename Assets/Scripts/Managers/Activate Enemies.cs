@@ -13,13 +13,10 @@ public class ActivateEnemies : MonoBehaviour
     {
         if (other == null) return;
 
-        //Debug.Log(other.name); 
-
         if (other.CompareTag(PLAYER_STRING))
         {
             foreach (var gate in gates)
             {
-                //Debug.Log("setting active");
                 gate.gameObject.SetActive(true);
             }
         }

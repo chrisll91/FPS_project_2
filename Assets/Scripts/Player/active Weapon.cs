@@ -55,7 +55,6 @@ public class activeWeapon : MonoBehaviour
     private void Start()
     {
         PickUpWeapon(startingWeapon);
-        
         AdjustAmmo(currentWeaponSO.magazineSize);
         
     }
@@ -66,7 +65,6 @@ public class activeWeapon : MonoBehaviour
         HandleReload();
 
     }
-
     public void AdjustAmmo(int amount)
     {
 
@@ -76,7 +74,6 @@ public class activeWeapon : MonoBehaviour
         {
             currentWeaponSO.currentAmmo = currentWeaponSO.magazineSize;
         }
-
         ammoText.text = currentWeaponSO.currentAmmo.ToString("D2");
         
     }
@@ -108,14 +105,11 @@ public class activeWeapon : MonoBehaviour
         Weapon newWeapon = Instantiate(weaponSO.weaponPrefab,transform).GetComponent<Weapon>(); 
         currentWeapon = newWeapon;
         this.currentWeaponSO = weaponSO;
-        
-
 
         AdjustAmmo(weaponSO.magazineSize);
         adjustAmmoReserve(weaponSO.totalAmmoCapacity);
-
-
     }
+
     public void HandleReload()
     {
         if (!StarterAssetsInputs.Reload) return;
@@ -127,8 +121,6 @@ public class activeWeapon : MonoBehaviour
 
         isRealoding = true;
         StartCoroutine(ReloadGunRoutine());
-
-
     }
     private void HandlePlayerDeath()
     {
@@ -147,7 +139,6 @@ public class activeWeapon : MonoBehaviour
         {
             audioSource.PlayOneShot(currentWeaponSO.ReloadingSound, currentWeaponSO.ShootVolume);
         }
-
         yield return new WaitForSeconds(currentWeaponSO.ReloadTime);
                 
         int amountToReload = currentWeaponSO.magazineSize - currentWeaponSO.currentAmmo;
@@ -160,8 +151,6 @@ public class activeWeapon : MonoBehaviour
         adjustAmmoReserve(-amountToReload);
         AdjustAmmo(amountToReload);
         isRealoding = false;
-
-
     }
 
 
@@ -170,7 +159,6 @@ public class activeWeapon : MonoBehaviour
         TimeSinceLastShot += Time.deltaTime;
 
         if (!StarterAssetsInputs.shoot) return;
-
 
         if (TimeSinceLastShot >= currentWeaponSO.FireRate && currentWeaponSO.currentAmmo > 0 && !isRealoding)
         {
@@ -182,8 +170,7 @@ public class activeWeapon : MonoBehaviour
             if (currentWeaponSO.shootSound != null)
             { 
                 audioSource.PlayOneShot(currentWeaponSO.shootSound, currentWeaponSO.ShootVolume);
-            }
-            
+            }    
             AdjustAmmo(-1);     
            
         }
@@ -197,15 +184,11 @@ public class activeWeapon : MonoBehaviour
                 audioSource.PlayOneShot(currentWeaponSO.emptyMagazineSound, currentWeaponSO.ShootVolume);
             }
         }
-
-
             if (!currentWeaponSO.IsAutomatic)
         { 
             StarterAssetsInputs.ShootInput(false);
             
-        }
-
-        
+        }   
     }
 
     void HandleZoom()
@@ -230,4 +213,6 @@ public class activeWeapon : MonoBehaviour
 
         }
     }
+
+
 }

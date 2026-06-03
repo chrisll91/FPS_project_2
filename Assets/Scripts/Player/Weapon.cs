@@ -31,7 +31,6 @@ public class Weapon : MonoBehaviour
             EnemyHealth enemyHealth = hit.collider.GetComponentInParent<EnemyHealth>();
             enemyHealth?.takeDamage(weaponSO.Damage);
             
-           
         }
 
         return true;

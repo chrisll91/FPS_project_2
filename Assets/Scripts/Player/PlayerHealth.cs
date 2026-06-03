@@ -10,9 +10,11 @@ public class PlayerHealth : MonoBehaviour
     [Range(1,10)]
     [SerializeField] int StartingHealth = 10;
     [SerializeField] Image[] shieldBars;
+
     [Header("Cameras")]
     [SerializeField] CinemachineVirtualCamera DeathVirtualCamera;
     [SerializeField] Transform weaponCamera;
+
     [Header("Game over Prefab")]
     [SerializeField] GameObject GameOverContainer;
      
@@ -49,10 +51,8 @@ public class PlayerHealth : MonoBehaviour
             }
             Destroy(this.gameObject);
 
-
         }
     }
-
     private void adjustShieldUI()
     {
         for (int i = 0; i < shieldBars.Length; i++)
