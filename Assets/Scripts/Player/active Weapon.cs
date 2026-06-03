@@ -126,6 +126,8 @@ public class activeWeapon : MonoBehaviour
     {
         ZoomWeapon.SetActive(false);
 
+        Debug.Log("ZOming out please");
+
         playerFollowCamera.m_Lens.FieldOfView = defaultZoom;
         weaponCamera.fieldOfView = defaultZoom;
 

@@ -25,10 +25,10 @@ public class SurvivalModeSceneManager : MonoBehaviour
 
     private void Update()
     {
-        if (Keyboard.current.escapeKey.wasPressedThisFrame)
-        {
-            SceneManager.LoadScene(0);
-        } 
+        //if (Keyboard.current.escapeKey.wasPressedThisFrame)
+        //{
+        //    SceneManager.LoadScene(0);
+        //} 
     }
     protected virtual IEnumerator IncreaseMaxSpawnLimitRoutine()
     {

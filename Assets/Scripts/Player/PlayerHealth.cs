@@ -46,6 +46,7 @@ public class PlayerHealth : MonoBehaviour
             SurvivalModeSceneManager gm = FindFirstObjectByType<SurvivalModeSceneManager>();
             if (gm != null)
             {
+                Debug.Log("Player Died invoke");
                 gm.OnPlayerDeath();
                 OnPlayerDied?.Invoke();
             }
